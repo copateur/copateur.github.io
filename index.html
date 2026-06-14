@@ -23,6 +23,23 @@
         <link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
         <!-- Style Css-->
         <link href="assets/css/style-dark-green.min.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css">
+        <style>
+            .mobile-preview-section {
+                position: relative;
+                z-index: 2;
+                overflow: visible;
+            }
+
+            .mobile-preview-image {
+                position: relative;
+                z-index: 3;
+            }
+
+            .section-divider {
+                position: relative;
+                z-index: 1;
+            }
+        </style>
     </head>
 
     <body>
@@ -86,7 +103,7 @@
                         </div>
 
                         <div class="home-dashboard onepage-hero" style="overflow: unset;">
-                            <img src="assets/images/mockup-1.png" alt="" class="img-fluid rounded">
+                            <img src="assets/images/mockup-2.png" alt="" class="img-fluid rounded">
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -95,7 +112,7 @@
         <!-- Hero End -->
 
         <!-- Features Start -->
-        <section class="section pb-0" id="service">
+        <section class="section pb-0 mobile-preview-section" id="service">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
@@ -190,7 +207,7 @@
             <div class="container mt-100 mt-60">
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-6">
-                        <img src="assets/images/mockup-3.png" class="img-fluid" alt="">
+                        <img src="assets/images/mockup-3.png" class="img-fluid mobile-preview-image" alt="">
                     </div><!--end col-->
 
                     <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
@@ -199,8 +216,8 @@
                             <p class="text-muted">Somos la mejor plataforma para organizadores y jugadores</p>
                             <ul class="list-unstyled mb-0 text-muted">
                                 <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Fácil de usar, segura y flexible</li>
-                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Compatible con todos los navegadores, sin descargar apps</li>
                                 <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Optimizada para carga rápida de planillas de partidos</li>
+                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>App móvil personalizada para tu liga</li>
                             </ul>
                         </div>
                     </div><!--end col-->
@@ -267,17 +284,8 @@
             </div>
             <!-- Modal Content End -->
 
-            <div class="container mt-100 mt-60">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="position-relative" style="z-index: 1;">
-                            <img src="assets/images/mockup-2.png" class="rounded img-fluid mx-auto d-block" alt="">
-                        </div>
-                    </div>
-                </div><!--end row-->
-            </div><!--end container-->
         </section><!--end section-->
-        <div class="position-relative">
+        <div class="section-divider">
             <div class="shape overflow-hidden text-light">
                 <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
@@ -298,65 +306,81 @@
                     </div><!--end col-->
                 </div><!--end row-->
 
-                <div class="row">                    
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card pricing pricing-primary business-rate shadow bg-light border-0 rounded">
-                            <div class="card-body">
-                                <h6 class="title name fw-bold text-uppercase mb-4">Gratis</h6>
-                                <div class="d-flex mb-4">
-                                    <span class="h4 mb-0 mt-2">U$S</span>
-                                    <span class="price h1 mb-0">0</span>
-                                    <span class="h4 align-self-end mb-1">/mes</span>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 col-12 mt-4 pt-2">
+                        <div class="card shadow border-0 rounded">
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-center mb-0 align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="border-bottom py-3 ps-4">Formato</th>
+                                                <th scope="col" class="border-bottom py-3 text-center">Partidos/mes</th>
+                                                <th scope="col" class="border-bottom py-3 pe-4 text-end">Precio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="py-3 ps-4 text-muted">14 equipos</td>
+                                                <td class="py-3 text-center text-muted">28</td>
+                                                <td class="py-3 pe-4 text-end fw-bold text-primary">Gratis</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 ps-4 text-muted">20 equipos</td>
+                                                <td class="py-3 text-center text-muted">40</td>
+                                                <td class="py-3 pe-4 text-end fw-bold">USD 15</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 ps-4 text-muted">24 equipos</td>
+                                                <td class="py-3 text-center text-muted">48</td>
+                                                <td class="py-3 pe-4 text-end fw-bold">USD 15</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 ps-4 text-muted">30 equipos</td>
+                                                <td class="py-3 text-center text-muted">60</td>
+                                                <td class="py-3 pe-4 text-end fw-bold">USD 15</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 ps-4 text-muted">40 equipos</td>
+                                                <td class="py-3 text-center text-muted">80</td>
+                                                <td class="py-3 pe-4 text-end fw-bold">USD 30</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 ps-4 text-muted">50 equipos</td>
+                                                <td class="py-3 text-center text-muted">100</td>
+                                                <td class="py-3 pe-4 text-end fw-bold">USD 30</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 ps-4 text-muted">60 equipos</td>
+                                                <td class="py-3 text-center text-muted">120</td>
+                                                <td class="py-3 pe-4 text-end fw-bold">USD 50</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 ps-4 text-muted">70 equipos</td>
+                                                <td class="py-3 text-center text-muted">140</td>
+                                                <td class="py-3 pe-4 text-end fw-bold">USD 50</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 ps-4 text-muted">80 equipos</td>
+                                                <td class="py-3 text-center text-muted">160</td>
+                                                <td class="py-3 pe-4 text-end fw-bold">USD 80</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 ps-4 text-muted">100 equipos</td>
+                                                <td class="py-3 text-center text-muted">200</td>
+                                                <td class="py-3 pe-4 text-end fw-bold">USD 80</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 ps-4 text-muted">182 equipos</td>
+                                                <td class="py-3 text-center text-muted">364</td>
+                                                <td class="py-3 pe-4 text-end fw-bold">USD 80</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                
-                                <ul class="list-unstyled mb-0 ps-0">
-                                    <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Todas las funcionalidades</li>
-                                    <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Hasta 30 partidos por mes</li>
-                                </ul>
-                                <a href="#contact" class="btn btn-primary mt-4">Comenzar</a>
                             </div>
                         </div>
                     </div><!--end col-->
-                    
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card pricing pricing-primary business-rate shadow border-0 rounded">
-                            <div class="ribbon ribbon-right ribbon-warning overflow-hidden"><span class="text-center d-block shadow small h6">Popular</span></div>
-                            <div class="card-body">
-                                <h6 class="title name fw-bold text-uppercase mb-4">Estándar</h6>
-                                <div class="d-flex mb-4">
-                                    <span class="h4 mb-0 mt-2">U$S</span>
-                                    <span class="price h1 mb-0">25</span>
-                                    <span class="h4 align-self-end mb-1">/mes</span>
-                                </div>
-
-                                <ul class="list-unstyled mb-0 ps-0">
-                                    <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Todas las funcionalidades</li>
-                                    <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Hasta 100 partidos por mes</li>
-                                </ul>
-                                <a href="#contact" class="btn btn-primary mt-4">Comenzar</a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card pricing pricing-primary business-rate shadow bg-light border-0 rounded">
-                            <div class="card-body">
-                                <h6 class="title name fw-bold text-uppercase mb-4">Ilimitado</h6>
-                                <div class="d-flex mb-4">
-                                    <span class="h4 mb-0 mt-2">U$S</span>
-                                    <span class="price h1 mb-0">35</span>
-                                    <span class="h4 align-self-end mb-1">/mes</span>
-                                </div>
-                                
-                                <ul class="list-unstyled mb-0 ps-0">
-                                    <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Todas las funcionalidades</li>
-                                    <li class="h6 text-muted mb-0"><span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Sin límite de partidos por mes</li>
-                                </ul>
-                                <a href="#contact" class="btn btn-primary mt-4">Comenzar</a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
                 </div><!--end row-->
             </div><!--end container-->
         </section><!--end section-->
